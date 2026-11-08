@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c7sg7qr8ynlg"]
+
+[ext_resource type="Texture2D" uid="uid://viusnalaio20" path="res://meshes/rock-1-1387579409.jpg" id="1_o0qsl"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_68h2w"]
+
+[node name="rock" type="Node2D" unique_id=1247275987]
+
+[node name="mesh" type="MeshInstance2D" parent="." unique_id=500581140]
+rotation = -3.1415927
+scale = Vector2(96.90001, 80.00002)
+mesh = SubResource("QuadMesh_68h2w")
+texture = ExtResource("1_o0qsl")

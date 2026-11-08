@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://duxlugsyxrtyf"]
+
+[ext_resource type="Script" uid="uid://bt4w7nrurkafb" path="res://player2.gd" id="1_rihsh"]
+[ext_resource type="Texture2D" uid="uid://7m73b7q5ojik" path="res://meshes/naked.png" id="2_vop8p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8bke"]
+size = Vector2(0.16511866, 0.5749998)
+
+[sub_resource type="QuadMesh" id="QuadMesh_onrkg"]
+
+[sub_resource type="GDScript" id="GDScript_4flbx"]
+script/source = "extends MeshInstance2D
+
+
+func _ready() -> void:
+	pass
+
+
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="player2" type="Node2D" unique_id=1173878408]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=978762510]
+script = ExtResource("1_rihsh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=476914834]
+position = Vector2(-1.0000019, 2.9999998)
+rotation = 3.1415925
+scale = Vector2(96.90001, 80.00002)
+shape = SubResource("RectangleShape2D_u8bke")
+
+[node name="mesh" type="MeshInstance2D" parent="CharacterBody2D" unique_id=461497715]
+rotation = 3.1415925
+scale = Vector2(96.90001, 80.00002)
+mesh = SubResource("QuadMesh_onrkg")
+texture = ExtResource("2_vop8p")
+script = SubResource("GDScript_4flbx")

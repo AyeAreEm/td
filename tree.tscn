@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c3pw52xnifi2t"]
+
+[ext_resource type="Texture2D" uid="uid://7xb6475b7y8g" path="res://meshes/oak-tree-3829901600.jpg" id="1_brfkd"]
+[ext_resource type="Script" uid="uid://cajpgawraad6h" path="res://tree.gd" id="1_nnvrw"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_nnvrw"]
+
+[node name="tree" type="Node2D" unique_id=1201244393]
+script = ExtResource("1_nnvrw")
+
+[node name="mesh" type="MeshInstance2D" parent="." unique_id=1759639248]
+rotation = -3.1415927
+scale = Vector2(93.499985, 133.4302)
+mesh = SubResource("QuadMesh_nnvrw")
+texture = ExtResource("1_brfkd")
