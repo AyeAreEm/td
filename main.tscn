@@ -1,6 +1,99 @@
 [gd_scene format=3 uid="uid://cn8vccefxxfnt"]
 
+[ext_resource type="Texture2D" uid="uid://eegn6h3jwxo0" path="res://meshes/green.jpg" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://c0aqm2nr087yl" path="res://meshes/brown.jpg" id="2_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://njhodcteyhhj" path="res://meshes/gray.jpg" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://viusnalaio20" path="res://meshes/rock-1-1387579409.jpg" id="4_lquwl"]
+[ext_resource type="Texture2D" uid="uid://7xb6475b7y8g" path="res://meshes/oak-tree-3829901600.jpg" id="5_7mycd"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_mp8kj"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_3ysyg"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_qd2vc"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_kimbe"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_6oni7"]
+
 [node name="main" type="Node2D" unique_id=57156318]
 
 [node name="camera" type="Camera2D" parent="." unique_id=638243142]
 position = Vector2(577, 324)
+
+[node name="meshes" type="Node" parent="." unique_id=1613941128]
+
+[node name="resources" type="MeshInstance2D" parent="meshes" unique_id=485571856]
+position = Vector2(582.5, 340.25)
+scale = Vector2(1202.9999, 681.5)
+mesh = SubResource("QuadMesh_mp8kj")
+texture = ExtResource("1_h2yge")
+
+[node name="stairs" type="MeshInstance2D" parent="meshes" unique_id=515225773]
+position = Vector2(706.03656, 173.44417)
+rotation = 0.26173034
+scale = Vector2(461.6503, 11.77602)
+mesh = SubResource("QuadMesh_3ysyg")
+texture = ExtResource("2_1bvp3")
+
+[node name="stairs2" type="MeshInstance2D" parent="meshes" unique_id=428172937]
+position = Vector2(459, 171)
+rotation = 2.8265014
+scale = Vector2(461.6503, 11.77602)
+mesh = SubResource("QuadMesh_3ysyg")
+texture = ExtResource("2_1bvp3")
+
+[node name="tower wall" type="MeshInstance2D" parent="meshes" unique_id=1388548742]
+position = Vector2(580, 70)
+scale = Vector2(1223, 140.5)
+mesh = SubResource("QuadMesh_qd2vc")
+texture = ExtResource("3_lquwl")
+
+[node name="separtor" type="MeshInstance2D" parent="meshes" unique_id=1909322484]
+position = Vector2(575.55005, 69.75)
+rotation = 1.5707964
+scale = Vector2(1223, 9.82004)
+mesh = SubResource("QuadMesh_qd2vc")
+texture = ExtResource("3_lquwl")
+
+[node name="rock" type="MeshInstance2D" parent="meshes" unique_id=1275357751]
+position = Vector2(727.7, 357.25)
+rotation = -3.1415927
+scale = Vector2(96.90001, 80.00002)
+mesh = SubResource("QuadMesh_kimbe")
+texture = ExtResource("4_lquwl")
+
+[node name="rock2" type="MeshInstance2D" parent="meshes" unique_id=1510421117]
+position = Vector2(877, 542)
+rotation = -3.1415927
+scale = Vector2(96.90001, 80.00002)
+mesh = SubResource("QuadMesh_kimbe")
+texture = ExtResource("4_lquwl")
+
+[node name="rock3" type="MeshInstance2D" parent="meshes" unique_id=1007892757]
+position = Vector2(1118, 446)
+rotation = -3.1415927
+scale = Vector2(96.90001, 80.00002)
+mesh = SubResource("QuadMesh_kimbe")
+texture = ExtResource("4_lquwl")
+
+[node name="tree" type="MeshInstance2D" parent="meshes" unique_id=231267292]
+position = Vector2(452.79996, 312.4651)
+rotation = -3.1415927
+scale = Vector2(93.499985, 133.4302)
+mesh = SubResource("QuadMesh_6oni7")
+texture = ExtResource("5_7mycd")
+
+[node name="tree2" type="MeshInstance2D" parent="meshes" unique_id=1355235189]
+position = Vector2(91, 560)
+rotation = -3.1415927
+scale = Vector2(93.499985, 133.4302)
+mesh = SubResource("QuadMesh_6oni7")
+texture = ExtResource("5_7mycd")
+
+[node name="tree3" type="MeshInstance2D" parent="meshes" unique_id=326883217]
+position = Vector2(387.99997, 524)
+rotation = -3.1415927
+scale = Vector2(93.499985, 133.4302)
+mesh = SubResource("QuadMesh_6oni7")
+texture = ExtResource("5_7mycd")
